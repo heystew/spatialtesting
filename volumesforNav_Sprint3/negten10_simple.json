@@ -1,0 +1,154 @@
+{
+  "type": "FeatureCollection",
+  
+  "features": [
+		{
+			"type": "Feature",
+			"properties":{
+				"customerID":"PrimeEquatorialFlightServices",
+				"volumeName":"PrimeTime",
+				"sac": 40,
+				"sic": 8,
+				"sid": 1,
+				"featureID": 0,
+				"featureType":"service",
+				"geometryType":"polygon",
+				"centerPoint":"[0,0]",
+				"floor" : 0,
+				"ceiling" : 65000
+			},
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[[-10,-10],[10,-10],[10,10],[-10,10],[-10,-10]]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties":{
+				"customerID":"PrimeEquatorialFlightServices",
+				"volumeName":"PrimeTime9",
+				"sac": 40,
+				"sic": 8,
+				"sid": 1,
+				"featureID": 1,
+				"featureType":"billing",
+				"billingPriority":"90",
+				"billingUnit":"time",
+				"billingRate":"10",
+				"geometryType":"polygon",
+				"centerPoint":"[0,0]",
+				"floor" : 18000,
+				"ceiling" : 65000
+			},
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[[-9,-9],[9,-9],[9,9],[-9,9],[-9,-9]]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties":{
+				"customerID":"PrimeEquatorialFlightServices",
+				"volumeName":"PrimeTime8",
+				"sac": 40,
+				"sic": 8,
+				"sid": 1,
+				"featureID": 2,
+				"featureType":"billing",
+				"billingPriority":"80",
+				"billingUnit":"time",
+				"billingRate":"10",
+				"geometryType":"polygon",
+				"centerPoint":"[0,0]",
+				"floor" : 18000,
+				"ceiling" : 65000
+			},
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[[-8,-8],[8,-8],[8,8],[-8,8],[-8,-8]]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties":{
+				"customerID":"PrimeEquatorialFlightServices",
+				"volumeName":"PrimeTime7",
+				"sac": 40,
+				"sic": 8,
+				"sid": 1,
+				"featureID": 3,
+				"featureType":"billing",
+				"billingPriority":"70",
+				"billingUnit":"time",
+				"billingRate":"10",
+				"geometryType":"polygon",
+				"centerPoint":"[0,0]",
+				"floor" : 18000,
+				"ceiling" : 65000
+			},
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[[-7,-7],[7,-7],[7,7],[-7,7],[-7,-7]]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties":{
+				"customerID":"PrimeEquatorialFlightServices",
+				"volumeName":"PrimeTime6",
+				"sac": 40,
+				"sic": 8,
+				"sid": 1,
+				"featureID": 4,
+				"featureType":"billing",
+				"billingPriority":"70",
+				"billingUnit":"time",
+				"billingRate":"10",
+				"geometryType":"polygon",
+				"centerPoint":"[0,0]",
+				"floor" : 12000,
+				"ceiling" : 65000
+			},
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[[-6,0],[0,-6],[6,0],[0,6],[-6,-0]]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties":{
+				"customerID":"PrimeEquatorialFlightServices",
+				"volumeName":"PrimeTime0",
+				"sac": 40,
+				"sic": 8,
+				"sid": 1,
+				"featureID": 13,
+				"featureType":"billing",
+				"billingPriority":"20",
+				"billingUnit":"time",
+				"billingRate":"10",
+				"geometryType":"circle",
+				"centerPoint":"[0,0]",
+				"radius":"100",
+				"floor" : 0,
+				"ceiling" : 65000
+			},
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[[1.663213,0.000000],[1.644646,0.249525],[1.589359,0.493480],[1.498582,0.726419],[1.374333,0.943141],[1.219380,1.138805],[1.037174,1.309037],[0.831782,1.450033],[0.607788,1.558636],[0.370198,1.632419],[0.124327,1.669727],[-0.124327,1.669727],[-0.370198,1.632419],[-0.607788,1.558636],[-0.831782,1.450033],[-1.037174,1.309037],[-1.219380,1.138805],[-1.374333,0.943141],[-1.498582,0.726419],[-1.589359,0.493480],[-1.644646,0.249525],[-1.663213,0.000000],[-1.644646,-0.249525],[-1.589359,-0.493480],[-1.498582,-0.726419],[-1.374333,-0.943141],[-1.219380,-1.138805],[-1.037174,-1.309037],[-0.831782,-1.450033],[-0.607788,-1.558636],[-0.370198,-1.632419],[-0.124327,-1.669727],[0.124327,-1.669727],[0.370198,-1.632419],[0.607788,-1.558636],[0.831782,-1.450033],[1.037174,-1.309037],[1.219380,-1.138805],[1.374333,-0.943141],[1.498582,-0.726419],[1.589359,-0.493480],[1.644646,-0.249525],[1.663213,0.000000]]
+				]
+			}
+		}
+	]
+}

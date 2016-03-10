@@ -1,0 +1,193 @@
+{
+  "type": "FeatureCollection",
+  
+  "features": [
+		{
+			"type": "Feature",
+			"properties":{
+				"customerID":"IAA",
+				"volumeName":"IAADOI",
+				"sac": 114,
+				"sic": 20,
+				"sid": 1,
+				"featureID": 0,
+				"featureType":"service",
+				"floor" : 0,
+				"ceiling" : 65000
+			},
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[-31, 62],
+						[-4.5, 62],
+						[-4.5, 44],
+						[-31, 44],
+						[-31, 62]
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties":{
+				"customerID":"IAA",
+				"volumeName":"SHANWICK",
+				"sac": 114,
+				"sic": 20,
+				"sid": 1,
+				"featureID": 1,
+				"featureType":"billing",
+				"billingPriority":"90",
+				"billingUnit":"time",
+				"billingRate":"10",
+				"floor" : 0,
+				"ceiling" : 65000
+			},
+			"geometry": {
+			"type": "Polygon",
+				"coordinates": [
+					[
+						[-30, 45],
+						[-30, 61],
+						[-10, 61],
+						[-10, 54.566667],
+						[-15, 54],
+						[-15, 51],
+						[-8, 51],
+						[-8, 45],
+						[-30, 45],
+						[-30, 45]					]
+					]
+			}
+		},
+
+		{
+			"type": "Feature",
+			"properties":{
+				"customerID":"IAA",
+				"volumeName":"SHANNON",
+				"sac": 114,
+				"sic": 20,
+				"sid": 1,
+				"featureID": 2,
+				"featureType":"billing",
+				"billingPriority":"80",
+				"billingUnit":"time",
+				"billingRate":"40",				
+				"floor" : 60000,
+				"ceiling" : 65000
+			},
+			"geometry": {
+			"type": "Polygon",
+				"coordinates": [
+					[
+						[-15, 51 ],
+						[-15, 54 ],
+						[-10, 54.566667 ],
+						[-9, 54.75 ],
+						[-8.25, 55.333333 ],
+						[-7.333333, 55.416667 ],
+						[-6.916667, 55.330098 ],
+						[-8.166667, 54.416667],
+						[-5.5, 53.916667 ],
+						[-5.5, 52.333292 ],
+						[-8, 51 ],
+						[-14.001836, 50.995064 ],
+						[-15, 51 ]
+			]
+					]
+			}
+		},
+		{
+		  "type": "Feature",
+	"properties":{
+					"customerID":"IAA",
+					"volumeName":"SOTA",
+					"sac": 114,
+					"sic": 20,
+					"sid": 1,
+					"featureID": 3,
+				"billingPriority":"70",
+				"billingUnit":"time",
+				"billingRate":"30",
+					"featureType":"billing",
+					"floor" : 5500,
+					"ceiling" : 60000
+				},
+			"geometry": {
+				"type": "Polygon",
+					"coordinates": [
+						[
+							[-15,51],
+							[-8,51],
+							[-8,48.5],
+							[-15,49],
+							[-15,51]
+						]
+					]
+			}
+		},    
+		{
+		  "type": "Feature",
+	"properties":{
+					"customerID":"IAA",
+					"volumeName":"NOTA",
+					"sac": 114,
+					"sic": 20,
+					"sid": 1,
+					"featureID": 4,
+					"featureType":"billing",
+					"billingPriority":"60",
+					"billingUnit":"time",
+					"billingRate":"20",
+					"floor" : 5500,
+					"ceiling" : 60000
+				},
+			"geometry": {
+				"type": "Polygon",
+					"coordinates": [
+						[
+							[-15,57],
+							[-10,57],
+							[-10,54.566667],
+							[-15,54],
+							[-15,57]
+						]
+					]
+			}
+		},
+		{
+		  "type": "Feature",
+	"properties":{
+					"customerID":"IAA",
+					"volumeName":"DublinCTA",
+					"sac": 114,
+					"sic": 20,
+					"sid": 1,
+					"featureID": 5,
+					"billingPriority":"10",
+					"billingUnit":"time",
+					"billingRate":"30",
+					"featureType":"billing",
+					"floor" : 7500,
+					"ceiling" : 24500
+				},
+			"geometry": {
+				"type": "Polygon",
+					"coordinates": [
+						[
+							[-5.5,52.759444],
+							[-5.5,52.333333],
+							[-6.616944,52.613889],
+							[-6.833333,52.759444],
+							[-6.833333,52.916667],
+							[-6.030833,52.916667],
+							[-5.9575,52.759444],
+							[-5.5,52.759444]
+						]
+					]
+			}
+		}
+	]
+}
