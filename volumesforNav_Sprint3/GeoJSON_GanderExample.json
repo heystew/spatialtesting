@@ -17,7 +17,7 @@
 				"customerID": "NAVCanada",
 				"anspTargetReportBundleTime":50,
 				"barometricAltitudeRounding":" true",
-				"statusReportFormat":" cat025",
+				"statusReportFormat":"cat025",
 				"tleEnabled":" true",
 				"rateEquipmentStatus":5,
 				"rateServiceVolumeStatus":5,
@@ -26,7 +26,7 @@
 				"rateServicePredictionReport":1,
 				"rateServicePredictionDefinition":12,
 				"rateVersionNumberReport":60,
-				"gstrProvided":" false",
+				"gstrProvided":"true",
 				"networkServicesGSTR":"239.1.4.5"
 			}
 		}
@@ -223,7 +223,7 @@
 		},
 		{
 		"type": "Feature",
-		"bbox": [-56.2835670007614, 44.99190178072561, -30.00132533880236, 55.0119745231045],
+		"bbox": [-39.315291,58.342387,-32.684709,61.656728],
 		"properties": {
 			"version":"1.01",
 			"modifiedDate":"2016-03-11T16:34:41.000Z",
@@ -308,10 +308,5 @@
 
 			}
       }
-	  ]
+     ]
 }			
-
-
-
-
-	
