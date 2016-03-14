@@ -16,9 +16,9 @@
 			"properties": {
 				"customerID": "NAVCanada",
 				"anspTargetReportBundleTimeMsecs":50,
-				"barometricAltitudeRounding":" true",
+				"barometricAltitudeRounding":"true",
 				"statusReportFormat":"cat025",
-				"tleEnabled":" true",
+				"tleEnabled":"true",
 				"rateEquipmentStatusSecs":5,
 				"rateServiceVolumeStatusSecs":5,
 				"rateServiceVolumeStatisticsSecs":5,
@@ -27,7 +27,7 @@
 				"rateServicePredictionDefinitionMins":12,
 				"rateVersionNumberReportMins":60,
 				"gstrProvided":"FALSE",
-				"networkServicesGSTR":"239.1.4.5",
+				"networkServicesGSTR":"239.1.4.5"
 			}
 		}
 	],
@@ -59,10 +59,10 @@
 				"anspTargetReportUpdateMode":"update",
 				"anspTargetReportMinWaitTimeMsecs":0,
 				"anspTargetReportPeriodicRateMsecs":0,
-				"anspTestTargetReportEnabled":" true",
-				"anspTestTargetReportCustom":" true",
-				"anspTestTargetReportCustomField":" icao",
-				"anspTestTargetReportCustomValue":" 0xfaafaa",
+				"anspTestTargetReportEnabled":"true",
+				"anspTestTargetReportCustom":"true",
+				"anspTestTargetReportCustomField":"icao",
+				"anspTestTargetReportCustomValue":"0xfaafaa",
 				"offlineStatusThresholdPercent":90,
 				"degradedStatusThresholdPercent":50,
 				"networkServicesAddress":"233.10.11.26",
