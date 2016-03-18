@@ -1,71 +1,186 @@
 {
-  "type": "FeatureCollection",
-  
-  "features": [
+	"fileVersion":2,
+	"checksum":"3c9fea101c7ca97e2432640db91887d5",
+	"fileFormatVersion":0,
+	"fileName":"negten10_simple.json",
+	"fileGeneratedBy":"geojson tiger team",
+	"fileModifiedDate":"2016-03-18T12:07:43.000Z",
+	"crs": {
+		"type": "name",
+		"properties": {
+			"name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+			}
+	},
+	"customerCollection":[
+		{
+			"type": "customer",
+			"properties": {
+				"customerID": "PrimeEquatorialFlightServices",
+				"anspTargetReportBundleTimeMsecs":50,
+				"barometricAltitudeRounding":"false",
+				"statusReportFormat":"cat025",
+				"tleEnabled":"true",
+				"rateEquipmentStatusSecs":5,
+				"rateServiceVolumeStatusSecs":5,
+				"rateServiceVolumeStatisticsSecs":5,
+				"servicePredictionReportLookAheadHours":24,
+				"rateServicePredictionReportMins":1,
+				"rateServicePredictionDefinitionMins":12,
+				"rateVersionNumberReportMins":60,
+				"gstrProvided":"false",
+				"networkServicesGSTR":"239.1.4.5"
+			}
+		}
+	],
+	"type": "FeatureCollection",
+	"totalFeatures":6,
+	"features": [
 		{
 			"type": "Feature",
 			"properties":{
+				"featureModifiedDate":"2016-03-06T01:00:00.000Z",
+				"featureEffectiveDate":"2016-02-21T16:00:00.000Z",
+				"featureEndDate":"2099-12-31T23:59:59.999Z",
 				"customerID":"PrimeEquatorialFlightServices",
 				"volumeName":"PrimeTime",
-				"sac": 40,
-				"sic": 8,
-				"sid": 1,
-				"featureID": 0,
+				"icaoID": "PMTM",
+				"sac":"0x28",
+				"sic":"0x08",
+				"sid":"0x01",
+				"featureID":"0x00",
 				"featureType":"service",
+				"featureState":"active",
+				"serviceFeatureProperties": {
+					"serviceType":"primary",
+					"serviceDefaultMode":"active",
+					"contractUpdateIntervalMsecs":15000,
+					"contractLatencyMsecs":2000,
+					"anspTargetReportUpdateMode":"update",
+					"anspTargetReportMinWaitTimeMsecs":700,
+					"anspTargetReportPeriodicRateMsecs":0,
+					"anspTestTargetReportEnabled":"true",
+					"anspTestTargetReportICAO":" 0xabc124",
+					"anspTestTargetReportPosition":[-57.877, 51.333],
+					"anspTestTargetReportPosType":"false",
+					"anspTestTargetReportAltFeet":0,
+					"anspTestTargetReportRxID":0,
+					"anspTestTargetReportTargetID":"TESTTGT",
+					"offlineStatusThresholdPercent":90,
+					"degradedStatusThresholdPercent":50,
+					"networkServicesAddress":"233.10.11.26",
+					"networkServicesAddress2":"233.10.11.27",
+					"portTargetReportsCAT021":59980,
+					"portVersionNumberCAT247":59991,
+					"portAPDKeepAlive":65535,
+					"portGSTR":59986,
+					"portEquipmentStatusCAT023":59982,
+					"portServiceVolumeStatusCAT023":59983,
+					"portServiceVolumeStatisticsCAT023":59984,
+					"portServiceDefinitionReportCAT238":59988,
+					"portServicePredictionReportCAT238":59990,
+					"portServiceSystemStatusReportCAT025":59992,
+					"portServiceStatisticsReportCAT025":59993,
+					"portConstellationTLEReportCAT253":59994
+				},
 				"geometryType":"polygon",
-				"centerPoint":"[0,0]",
-				"floor" : 0,
-				"ceiling" : 65000
+				"centerPoint":"[0, 0]",
+				"radiusNMI":0,
+				"floorFeet":0,
+				"ceilingFeet":65000,
+				"stroke": "#0000ff",
+				"stroke-width": 2,
+				"stroke-opacity": 1,
+				"fill": "#622981",
+				"fill-opacity": 0
+
 			},
 			"geometry": {
 				"type": "Polygon",
 				"coordinates": [
-					[[-11,-11],[10,-10],[10,10],[-10,10],[-11,-11]]
+					[[-10,-10],[10,-10],[10,10],[-10,10],[-10,-10]]
 				]
 			}
 		},
 		{
 			"type": "Feature",
 			"properties":{
+				"featureVersion":2,
+				"featureModifiedDate":"2016-03-06T16:00:00.000Z",
+				"featureEffectiveDate":"2016-03-06T16:00:00.000Z",
+				"featureEndDate":"2099-12-31T23:59:59.999Z",
 				"customerID":"PrimeEquatorialFlightServices",
 				"volumeName":"PrimeTime9",
-				"sac": 40,
-				"sic": 8,
-				"sid": 1,
-				"featureID": 1,
+				"icaoID": "PMTM",
+				"sac":"0x28",
+				"sic":"0x08",
+				"sid":"0x01",
+				"featureID":"0x01",
 				"featureType":"billing",
-				"billingPriority":"90",
-				"billingUnit":"time",
-				"billingRate":"10",
+				"featureState":"active",
+				"billingFeatureProperties": {
+					"billable":"true",
+					"billingType":"time",
+					"creditable":"false",
+					"billingPriority":90,
+					"billingUnit":"hour",
+					"billingRate":"A",
+					"billingEffectiveDate":"2016-03-06T16:00:00.000Z",
+					"billingEndDate":"2099-12-31T23:59:59.999Z"
+				},
 				"geometryType":"polygon",
-				"centerPoint":"[0,0]",
-				"floor" : 18000,
-				"ceiling" : 65000
+				"centerPoint":"[0, 0]",
+				"radiusNMI":0,
+				"floorFeet":18000,
+				"ceilingFeet":65000,
+				"stroke": "#005500",
+				"stroke-width": 2,
+				"stroke-opacity": 1,
+				"fill": "#343434",
+				"fill-opacity": 0.5
 			},
 			"geometry": {
 				"type": "Polygon",
 				"coordinates": [
-					[[-9,-9],[9,-9],[10,10],[-9,9],[-9,-9]]
+					[[-9,-9],[9,-9],[9,9],[-9,9],[-9,-9]]
 				]
 			}
 		},
 		{
 			"type": "Feature",
 			"properties":{
+				"featureVersion":2,
+				"featureModifiedDate":"2016-03-06T16:00:00.000Z",
+				"featureEffectiveDate":"2016-03-06T16:00:00.000Z",
+				"featureEndDate":"2099-12-31T23:59:59.999Z",
 				"customerID":"PrimeEquatorialFlightServices",
 				"volumeName":"PrimeTime8",
-				"sac": 40,
-				"sic": 8,
-				"sid": 1,
-				"featureID": 2,
+				"icaoID": "PMTM",
+				"sac":"0x28",
+				"sic":"0x08",
+				"sid":"0x01",
+				"featureID":"0x02",
 				"featureType":"billing",
-				"billingPriority":"80",
-				"billingUnit":"time",
-				"billingRate":"10",
+				"featureState":"active",
+				"billingFeatureProperties": {
+					"billable":"true",
+					"billingType":"time",
+					"creditable":"false",
+					"billingPriority":80,
+					"billingUnit":"hour",
+					"billingRate":"A",
+					"billingEffectiveDate":"2016-03-06T16:00:00.000Z",
+					"billingEndDate":"2099-12-31T23:59:59.999Z"
+				},
 				"geometryType":"polygon",
-				"centerPoint":"[0,0]",
-				"floor" : 18000,
-				"ceiling" : 65000
+				"centerPoint":"[0, 0]",
+				"radiusNMI":0,
+				"floorFeet":18000,
+				"ceilingFeet":65000,
+				"stroke": "#005500",
+				"stroke-width": 2,
+				"stroke-opacity": 1,
+				"fill": "#343434",
+				"fill-opacity": 0.5
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -77,20 +192,39 @@
 		{
 			"type": "Feature",
 			"properties":{
+				"featureVersion":2,
+				"featureModifiedDate":"2016-03-06T16:00:00.000Z",
+				"featureEffectiveDate":"2016-03-06T16:00:00.000Z",
+				"featureEndDate":"2099-12-31T23:59:59.999Z",
 				"customerID":"PrimeEquatorialFlightServices",
 				"volumeName":"PrimeTime7",
-				"sac": 40,
-				"sic": 8,
-				"sid": 1,
-				"featureID": 3,
+				"icaoID": "PMTM",
+				"sac":"0x28",
+				"sic":"0x08",
+				"sid":"0x01",
+				"featureID":"0x03",
 				"featureType":"billing",
-				"billingPriority":"70",
-				"billingUnit":"time",
-				"billingRate":"10",
+				"featureState":"active",
+				"billingFeatureProperties": {
+					"billable":"true",
+					"billingType":"time",
+					"creditable":"false",
+					"billingPriority":70,
+					"billingUnit":"hour",
+					"billingRate":"A",
+					"billingEffectiveDate":"2016-03-06T16:00:00.000Z",
+					"billingEndDate":"2099-12-31T23:59:59.999Z"
+				},
 				"geometryType":"polygon",
-				"centerPoint":"[0,0]",
-				"floor" : 18000,
-				"ceiling" : 65000
+				"centerPoint":"[0, 0]",
+				"radiusNMI":0,
+				"floorFeet":18000,
+				"ceilingFeet":65000,
+				"stroke": "#005500",
+				"stroke-width": 2,
+				"stroke-opacity": 1,
+				"fill": "#343434",
+				"fill-opacity": 0.5
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -102,20 +236,39 @@
 		{
 			"type": "Feature",
 			"properties":{
+				"featureVersion":2,
+				"featureModifiedDate":"2016-03-06T16:00:00.000Z",
+				"featureEffectiveDate":"2016-03-06T16:00:00.000Z",
+				"featureEndDate":"2099-12-31T23:59:59.999Z",
 				"customerID":"PrimeEquatorialFlightServices",
 				"volumeName":"PrimeTime6",
-				"sac": 40,
-				"sic": 8,
-				"sid": 1,
-				"featureID": 4,
+				"icaoID": "PMTM",
+				"sac":"0x28",
+				"sic":"0x08",
+				"sid":"0x01",
+				"featureID":"0x04",
 				"featureType":"billing",
-				"billingPriority":"70",
-				"billingUnit":"time",
-				"billingRate":"10",
+				"featureState":"active",
+				"billingFeatureProperties": {
+					"billable":"true",
+					"billingType":"time",
+					"creditable":"false",
+					"billingPriority":60,
+					"billingUnit":"hour",
+					"billingRate":"A",
+					"billingEffectiveDate":"2016-03-06T16:00:00.000Z",
+					"billingEndDate":"2099-12-31T23:59:59.999Z"
+				},
 				"geometryType":"polygon",
-				"centerPoint":"[0,0]",
-				"floor" : 12000,
-				"ceiling" : 65000
+				"centerPoint":"[0, 0]",
+				"radiusNMI":0,
+				"floorFeet":12000,
+				"ceilingFeet":65000,
+				"stroke": "#005500",
+				"stroke-width": 2,
+				"stroke-opacity": 1,
+				"fill": "#343434",
+				"fill-opacity": 0.5
 			},
 			"geometry": {
 				"type": "Polygon",
@@ -127,46 +280,39 @@
 		{
 			"type": "Feature",
 			"properties":{
-				"customerID":"PrimeEquatorialFlightServices",
-				"volumeName":"PrimeTime5",
-				"sac": 40,
-				"sic": 8,
-				"sid": 1,
-				"featureID": 9,
-				"featureType":"billing",
-				"billingPriority":"50",
-				"billingUnit":"time",
-				"billingRate":"10",
-				"geometryType":"polygon",
-				"centerPoint":"[0,0]",
-				"floor" : 12000,
-				"ceiling" : 65000
-			},
-			"geometry": {
-				"type": "Polygon",
-				"coordinates": [
-					[[-5,0],[0,-5],[5,0],[0,5],[-5,-0]]
-				]
-			}
-		},
-		{
-			"type": "Feature",
-			"properties":{
+				"featureVersion":2,
+				"featureModifiedDate":"2016-03-06T16:00:00.000Z",
+				"featureEffectiveDate":"2016-03-06T16:00:00.000Z",
+				"featureEndDate":"2099-12-31T23:59:59.999Z",
 				"customerID":"PrimeEquatorialFlightServices",
 				"volumeName":"PrimeTime0",
-				"sac": 40,
-				"sic": 8,
-				"sid": 1,
-				"featureID": 13,
+				"icaoID": "PMTM",
+				"sac":"0x28",
+				"sic":"0x08",
+				"sid":"0x01",
+				"featureID":"0x05",
 				"featureType":"billing",
-				"billingPriority":"20",
-				"billingUnit":"time",
-				"billingRate":"10",
+				"featureState":"active",
+				"billingFeatureProperties": {
+					"billable":"true",
+					"billingType":"time",
+					"creditable":"false",
+					"billingPriority":50,
+					"billingUnit":"hour",
+					"billingRate":"A",
+					"billingEffectiveDate":"2016-03-06T16:00:00.000Z",
+					"billingEndDate":"2099-12-31T23:59:59.999Z"
+				},
 				"geometryType":"circle",
-				"centerPoint":"[0,0]",
-				"radius":"100",
-				"floor" : 0,
-				"ceiling" : 65000
+				"centerPoint":"[0, 0]",
+				"radiusNMI":100,
+				"floorFeet":0,
+				"ceilingFeet":65000,
+				"stroke": "#005500",
+				"stroke-width": 2,
+				"stroke-opacity": 1,
+				"fill": "#343434",
+				"fill-opacity": 0.5
 			},
 			"geometry": {
 				"type": "Polygon",

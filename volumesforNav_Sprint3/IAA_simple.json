@@ -1,29 +1,108 @@
 {
-  "type": "FeatureCollection",
-  
-  "features": [
+	"fileVersion":2,
+	"checksum":"3c9fea101c7ca97e2432640db91887d5",
+	"fileFormatVersion":0,
+	"fileName":"IAA_simple.json",
+	"fileGeneratedBy":"geojson tiger team",
+	"fileModifiedDate":"2016-03-18T12:07:41.000Z",
+	"crs": {
+		"type": "name",
+		"properties": {
+			"name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+			}
+	},
+	"customerCollection":[
+		{
+			"type": "customer",
+			"properties": {
+				"customerID": "IAA",
+				"anspTargetReportBundleTimeMsecs":50,
+				"barometricAltitudeRounding":"false",
+				"statusReportFormat":"cat025",
+				"tleEnabled":"true",
+				"rateEquipmentStatusSecs":5,
+				"rateServiceVolumeStatusSecs":5,
+				"rateServiceVolumeStatisticsSecs":5,
+				"servicePredictionReportLookAheadHours":24,
+				"rateServicePredictionReportMins":1,
+				"rateServicePredictionDefinitionMins":12,
+				"rateVersionNumberReportMins":60,
+				"gstrProvided":"false",
+				"networkServicesGSTR":"239.1.4.5"
+			}
+		}
+	],
+	"type": "FeatureCollection",
+	"totalFeatures":6,
+	"features": [
 		{
 			"type": "Feature",
 			"properties":{
+				"featureVersion":2,
+				"featureModifiedDate":"2016-03-26T01:00:00.000Z",
+				"featureEffectiveDate":"2016-02-21T16:00:00.000Z",
+				"featureEndDate":"2099-12-31T23:59:59.999Z",
 				"customerID":"IAA",
 				"volumeName":"IAADOI",
-				"sac": 114,
-				"sic": 20,
-				"sid": 1,
-				"featureID": 0,
+				"icaoID": "CZQX",
+				"sac":"0x72",
+				"sic":"0x14",
+				"sid":"0x01",
+				"featureID":"0x00",
 				"featureType":"service",
-				"floor" : 0,
-				"ceiling" : 65000
+				"featureState":"active",
+				"serviceFeatureProperties": {
+					"serviceType":"primary",
+					"serviceDefaultMode":"active",
+					"contractUpdateIntervalMsecs":15000,
+					"contractLatencyMsecs":2000,
+					"anspTargetReportUpdateMode":"update",
+					"anspTargetReportMinWaitTimeMsecs":700,
+					"anspTargetReportPeriodicRateMsecs":0,
+					"anspTestTargetReportEnabled":"true",
+					"anspTestTargetReportICAO":" 0xabc124",
+					"anspTestTargetReportPosition":[-57.877, 51.333],
+					"anspTestTargetReportPosType":"false",
+					"anspTestTargetReportAltFeet":0,
+					"anspTestTargetReportRxID":0,
+					"anspTestTargetReportTargetID":"TESTIAA",
+					"offlineStatusThresholdPercent":90,
+					"degradedStatusThresholdPercent":50,
+					"networkServicesAddress":"233.10.11.26",
+					"networkServicesAddress2":"233.10.11.27",
+					"portTargetReportsCAT021":59980,
+					"portVersionNumberCAT247":59991,
+					"portAPDKeepAlive":65535,
+					"portGSTR":59986,
+					"portEquipmentStatusCAT023":59982,
+					"portServiceVolumeStatusCAT023":59983,
+					"portServiceVolumeStatisticsCAT023":59984,
+					"portServiceDefinitionReportCAT238":59988,
+					"portServicePredictionReportCAT238":59990,
+					"portServiceSystemStatusReportCAT025":59992,
+					"portServiceStatisticsReportCAT025":59993,
+					"portConstellationTLEReportCAT253":59994
+				},
+				"geometryType":"polygon",
+				"centerPoint":"[-57.877, 51.333]",
+				"radiusNMI":0,
+				"floorFeet":0,
+				"ceilingFeet":65000,
+				"stroke": "#0000ff",
+				"stroke-width": 2,
+				"stroke-opacity": 1,
+				"fill": "#622981",
+				"fill-opacity": 0
 			},
 			"geometry": {
 				"type": "Polygon",
 				"coordinates": [
 					[
-						[-33, 62],
+						[-31, 62],
 						[-4.5, 62],
 						[-4.5, 44],
-						[-33, 40],
-						[-33, 62]
+						[-31, 44],
+						[-31, 62]
 					]
 				]
 			}
@@ -31,18 +110,39 @@
 		{
 			"type": "Feature",
 			"properties":{
+				"featureVersion":2,
+				"featureModifiedDate":"2016-03-26T16:00:00.000Z",
+				"featureEffectiveDate":"2016-03-16T16:00:00.000Z",
+				"featureEndDate":"2099-12-31T23:59:59.999Z",
 				"customerID":"IAA",
 				"volumeName":"SHANWICK",
-				"sac": 114,
-				"sic": 20,
-				"sid": 1,
-				"featureID": 1,
+				"icaoID": "CZQX",
+				"sac":"0x72",
+				"sic":"0x14",
+				"sid":"0x01",
+				"featureID":"0x01",
 				"featureType":"billing",
-				"billingPriority":"90",
-				"billingUnit":"time",
-				"billingRate":"10",
-				"floor" : 0,
-				"ceiling" : 65000
+				"featureState":"active",
+				"billingFeatureProperties": {
+					"billable":"true",
+					"billingType":"time",
+					"creditable":"false",
+					"billingPriority":90,
+					"billingUnit":"hour",
+					"billingRate":"A",
+					"billingEffectiveDate":"2016-03-06T16:00:00.000Z",
+					"billingEndDate":"2099-12-31T23:59:59.999Z"
+				},
+				"geometryType":"polygon",
+				"centerPoint":"[-57.877, 51.333]",
+				"radiusNMI":0,
+				"floorFeet":0,
+				"ceilingFeet":65000,
+				"stroke": "#005500",
+				"stroke-width": 2,
+				"stroke-opacity": 1,
+				"fill": "#343434",
+				"fill-opacity": 0.5
 			},
 			"geometry": {
 			"type": "Polygon",
@@ -57,26 +157,48 @@
 						[-8, 51],
 						[-8, 45],
 						[-30, 45],
-						[-30, 45]					]
+						[-30, 45]
 					]
+				]
 			}
 		},
 
 		{
 			"type": "Feature",
 			"properties":{
+				"featureVersion":2,
+				"featureModifiedDate":"2016-03-26T16:00:00.000Z",
+				"featureEffectiveDate":"2016-03-16T16:00:00.000Z",
+				"featureEndDate":"2099-12-31T23:59:59.999Z",
 				"customerID":"IAA",
 				"volumeName":"SHANNON",
-				"sac": 114,
-				"sic": 20,
-				"sid": 1,
-				"featureID": 2,
+				"icaoID": "CZQX",
+				"sac":"0x72",
+				"sic":"0x14",
+				"sid":"0x01",
+				"featureID":"0x02",
 				"featureType":"billing",
-				"billingPriority":"80",
-				"billingUnit":"time",
-				"billingRate":"40",				
-				"floor" : 60000,
-				"ceiling" : 65000
+				"featureState":"active",
+				"billingFeatureProperties": {
+					"billable":"true",
+					"billingType":"time",
+					"creditable":"false",
+					"billingPriority":80,
+					"billingUnit":"hour",
+					"billingRate":"A",
+					"billingEffectiveDate":"2016-03-26T16:00:00.000Z",
+					"billingEndDate":"2099-12-31T23:59:59.999Z"
+				},
+				"geometryType":"polygon",
+				"centerPoint":"[-57.877, 51.333]",
+				"radiusNMI":0,
+				"floorFeet":60000,
+				"ceilingFeet":65000,
+				"stroke": "#005500",
+				"stroke-width": 2,
+				"stroke-opacity": 1,
+				"fill": "#343400",
+				"fill-opacity": 0.5
 			},
 			"geometry": {
 			"type": "Polygon",
@@ -95,26 +217,47 @@
 						[-8, 51 ],
 						[-14.001836, 50.995064 ],
 						[-15, 51 ]
-			]
 					]
+				]
 			}
 		},
 		{
-		  "type": "Feature",
-	"properties":{
-					"customerID":"IAA",
-					"volumeName":"SOTA",
-					"sac": 114,
-					"sic": 20,
-					"sid": 1,
-					"featureID": 3,
-				"billingPriority":"70",
-				"billingUnit":"time",
-				"billingRate":"30",
-					"featureType":"billing",
-					"floor" : 5500,
-					"ceiling" : 60000
+			"type": "Feature",
+			"properties":{
+				"featureVersion":2,
+				"featureModifiedDate":"2016-03-26T16:00:00.000Z",
+				"featureEffectiveDate":"2016-03-16T16:00:00.000Z",
+				"featureEndDate":"2099-12-31T23:59:59.999Z",
+				"customerID":"IAA",
+				"volumeName":"SOTA",
+				"icaoID": "CZQX",
+				"sac":"0x72",
+				"sic":"0x14",
+				"sid":"0x01",
+				"featureID":"0x03",
+				"featureType":"billing",
+				"featureState":"active",
+				"billingFeatureProperties": {
+					"billable":"true",
+					"billingType":"time",
+					"creditable":"false",
+					"billingPriority":70,
+					"billingUnit":"hour",
+					"billingRate":"A",
+					"billingEffectiveDate":"2016-03-26T16:00:00.000Z",
+					"billingEndDate":"2099-12-31T23:59:59.999Z"
 				},
+				"geometryType":"polygon",
+				"centerPoint":"[-57.877, 51.333]",
+				"radiusNMI":0,
+				"floorFeet":5500,
+				"ceilingFeet":65000,
+				"stroke": "#005500",
+				"stroke-width": 2,
+				"stroke-opacity": 1,
+				"fill": "#343400",
+				"fill-opacity": 0.5					
+			},
 			"geometry": {
 				"type": "Polygon",
 					"coordinates": [
@@ -129,64 +272,106 @@
 			}
 		},    
 		{
-		  "type": "Feature",
-	"properties":{
-					"customerID":"IAA",
-					"volumeName":"NOTA",
-					"sac": 114,
-					"sic": 20,
-					"sid": 1,
-					"featureID": 4,
-					"featureType":"billing",
-					"billingPriority":"60",
-					"billingUnit":"time",
-					"billingRate":"20",
-					"floor" : 5500,
-					"ceiling" : 60000
+			"type": "Feature",
+			"properties":{
+				"featureVersion":2,
+				"featureModifiedDate":"2016-03-26T16:00:00.000Z",
+				"featureEffectiveDate":"2016-03-16T16:00:00.000Z",
+				"featureEndDate":"2099-12-31T23:59:59.999Z",
+				"customerID":"IAA",
+				"volumeName":"NOTA",
+				"icaoID": "CZQX",
+				"sac":"0x72",
+				"sic":"0x14",
+				"sid":"0x01",
+				"featureID":"0x04",
+				"featureType":"billing",
+				"featureState":"active",
+				"billingFeatureProperties": {
+					"billable":"true",
+					"billingType":"time",
+					"creditable":"false",
+					"billingPriority":60,
+					"billingUnit":"hour",
+					"billingRate":"A",
+					"billingEffectiveDate":"2016-03-26T16:00:00.000Z",
+					"billingEndDate":"2099-12-31T23:59:59.999Z"
 				},
+				"geometryType":"polygon",
+				"centerPoint":"[-57.877, 51.333]",
+				"radiusNMI":0,
+				"floorFeet":5500,
+				"ceilingFeet":60000,
+				"stroke": "#005500",
+				"stroke-width": 2,
+				"stroke-opacity": 1,
+				"fill": "#343400",
+				"fill-opacity": 0.5					
+			},
 			"geometry": {
-				"type": "Polygon",
-					"coordinates": [
-						[
-							[-15,57],
-							[-10,57],
-							[-10,54.566667],
-							[-15,54],
-							[-15,57]
-						]
+			"type": "Polygon",
+				"coordinates": [
+					[
+						[-15,57],
+						[-10,57],
+						[-10,54.566667],
+						[-15,54],
+						[-15,57]
 					]
+				]
 			}
 		},
 		{
-		  "type": "Feature",
-	"properties":{
-					"customerID":"IAA",
-					"volumeName":"DublinCTA",
-					"sac": 114,
-					"sic": 20,
-					"sid": 1,
-					"featureID": 5,
-					"billingPriority":"10",
-					"billingUnit":"time",
-					"billingRate":"30",
-					"featureType":"billing",
-					"floor" : 7500,
-					"ceiling" : 24500
+			"type": "Feature",
+			"properties":{
+				"featureVersion":2,
+				"featureModifiedDate":"2016-03-26T16:00:00.000Z",
+				"featureEffectiveDate":"2016-03-16T16:00:00.000Z",
+				"featureEndDate":"2099-12-31T23:59:59.999Z",
+				"customerID":"IAA",
+				"volumeName":"DublinCTA",
+				"icaoID": "CZQX",
+				"sac":"0x72",
+				"sic":"0x14",
+				"sid":"0x01",
+				"featureID":"0x05",
+				"featureType":"billing",
+				"featureState":"active",
+				"billingFeatureProperties": {
+					"billable":"true",
+					"billingType":"time",
+					"creditable":"false",
+					"billingPriority":30,
+					"billingUnit":"hour",
+					"billingRate":"A",
+					"billingEffectiveDate":"2016-03-26T16:00:00.000Z",
+					"billingEndDate":"2099-12-31T23:59:59.999Z"
 				},
+				"geometryType":"polygon",
+				"centerPoint":"[-57.877, 51.333]",
+				"radiusNMI":0,
+				"floorFeet":7500,
+				"ceilingFeet":24500,
+				"stroke": "#005500",
+				"stroke-width": 2,
+				"stroke-opacity": 1,
+				"fill": "#343400",
+				"fill-opacity": 0.5					
+			},
 			"geometry": {
-				"type": "Polygon",
-					"coordinates": [
-						[
-							[-5.5,52.759444],
-							[-5.5,52.333333],
-							[-6.616944,52.613889],
-							[-6.833333,52.759444],
-							[-6.833333,52.916667],
-							[-6.030833,52.916667],
-							[-5.9575,52.759444],
-							[-5.5,52.759444]
-						]
+			"type": "Polygon",
+				"coordinates": [
+					[
+						[-5.5,52.759444],
+						[-5.5,52.333333],
+						[-6.616944,52.613889],
+						[-6.833333,52.759444],
+						[-6.833333,52.916667],
+						[-6.030833,52.916667],
+						[-5.9575,52.759444],
+						[-5.5,52.759444]
 					]
+				]
 			}
 		}
 	]
