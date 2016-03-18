@@ -1,16 +1,17 @@
 {
+	"fileVersion":7,
+	"checksum":"5e06cf5ea3c0bd124b2347317143897d",
+	"fileFormatVersion":0,
+	"fileName":"GeoJSON_GanderExample_rev01g.json",
+	"fileGeneratedBy":"geojson tiger team",
+	"fileModifiedDate":"2016-03-11T17:07:41.000Z",
 	"crs": {
 		"type": "name",
 		"properties": {
 			"name": "urn:ogc:def:crs:OGC:1.3:CRS84"
 			}
 		},
-	"version":"1.03",
-	"checksum":"b51c05c1787389839996f2b746bfeec8",
-	"fileName":"GeoJSON_GanderExample_rev01e.json",
-	"fileGeneratedBy":"geojson tiger team",
-	"modifiedDate":"2016-03-11T17:07:41.000Z",
-	"customers":[
+	"customerCollection":[
 		{
 			"type": "customer",
 			"properties": {
@@ -26,22 +27,22 @@
 				"rateServicePredictionReportMins":1,
 				"rateServicePredictionDefinitionMins":12,
 				"rateVersionNumberReportMins":60,
-				"gstrProvided":"FALSE",
+				"gstrProvided":"false",
 				"networkServicesGSTR":"239.1.4.5"
 			}
 		}
 	],
 	"type": "FeatureCollection",
-	"totalFeatures":"3",
+	"totalFeatures":4,
 	"features": [
 		{
 		"type": "Feature",
 		"bbox": [-64.33349995898287, 44.22603070476448, -28.40475798815356, 65.95967887885911],
 		"properties": {
-			"version":"1.01",
-			"modifiedDate":"2016-02-26T16:34:41.000Z",
-			"effectiveDate":"2016-03-06T16:34:41.000Z",
-			"endDate":"null",
+			"featureVersion":1,
+			"featureModifiedDate":"2016-03-26T16:34:41.000Z",
+			"featureEffectiveDate":"2016-02-06T16:34:41.000Z",
+			"featureEndDate":"2099-12-31T23:59:59.999Z",
 			"customerID":"NAVCanada",
 			"volumeName":"GanderCentralFIR",
 			"icaoID": "CZQX",
@@ -51,18 +52,21 @@
 			"featureID":"0x00",
 			"featureType":"service",
 			"featureState":"active",
-			"serviceTypeProperties": {
+			"serviceFeatureProperties": {
 				"serviceType":"primary",
-				"serviceDefaultMode":"null",
-				"contractUpdateIntervalMsecs":700,
-				"contractLatencyMsecs":1500,
+				"serviceDefaultMode":"active",
+				"contractUpdateIntervalMsecs":15000,
+				"contractLatencyMsecs":2000,
 				"anspTargetReportUpdateMode":"update",
-				"anspTargetReportMinWaitTimeMsecs":0,
+				"anspTargetReportMinWaitTimeMsecs":700,
 				"anspTargetReportPeriodicRateMsecs":0,
 				"anspTestTargetReportEnabled":"true",
-				"anspTestTargetReportCustom":"true",
-				"anspTestTargetReportCustomField":"icao",
-				"anspTestTargetReportCustomValue":"0xfaafaa",
+				"anspTestTargetReportICAO":" 0xabc123",
+				"anspTestTargetReportPosition":[-57.877, 51.333],
+				"anspTestTargetReportPosType":"false",
+				"anspTestTargetReportAltFeet":0,
+				"anspTestTargetReportRxID":0,
+				"anspTestTargetReportTargetID":"TESTTARG",
 				"offlineStatusThresholdPercent":90,
 				"degradedStatusThresholdPercent":50,
 				"networkServicesAddress":"233.10.11.26",
@@ -77,8 +81,8 @@
 				"portServiceDefinitionReportCAT238":59988,
 				"portServicePredictionReportCAT238":59990,
 				"portServiceSystemStatusReportCAT025":59992,
-				"portServiceStatisticsReport":59993,
-				"portConstellationTLEReport":59994
+				"portServiceStatisticsReportCAT025":59993,
+				"portConstellationTLEReportCAT253":59994
 			},
 			"geometryType":"polygon",
 			"centerPoint":"[-57.877, 51.333]",
@@ -119,10 +123,10 @@
 		"type": "Feature",
 		"bbox": [-63.0194756961459, 54.97967242813758, -30.02953859615085, 65.00587696019332],
 		"properties": {
-			"version":"1.01",
-			"modifiedDate":"2016-02-26T16:34:41.000Z",
-			"effectiveDate":"2016-03-06T16:34:41.000Z",
-			"endDate":"null",
+			"featureVersion":1,
+			"featureModifiedDate":"2016-02-26T16:34:41.000Z",
+			"featureEffectiveDate":"2016-03-06T16:34:41.000Z",
+			"featureEndDate":"2099-12-31T23:59:59.999Z",
 			"customerID":"NAVCanada",
 			"volumeName":"GanderCentralFIRbillingnorth",
 			"icaoID": "CZQX",
@@ -131,18 +135,22 @@
 			"sid":"0x01",
 			"featureID":"0x01",
 			"featureType":"billing",
-			"billingTypeProperties": {
+			"featureState":"active",
+			"billingFeatureProperties": {
+				"billable":"true",
+				"billingType":"time",
 				"creditable":"false",
 				"billingPriority":10,
-				"billingUnit":"time",
+				"billingUnit":"hour",
+				"billingRate":"A",
 				"billingEffectiveDate":"2017-11-06T16:34:41.000Z",
-				"billingEndDate":"null"
+				"billingEndDate":"2099-12-31T23:59:59.999Z"
 			},
 			"geometryType":"polygon",
 			"centerPoint":"[-57.877, 51.333]",
 			"radiusNMI":"NA",
-			"floorFt":18000,
-			"ceilingFt":60000,
+			"floorFeet":18000,
+			"ceilingFeet":60000,
 			"stroke": "#005500",
 			"stroke-width": 2,
 			"stroke-opacity": 1,
@@ -151,8 +159,8 @@
 			},
 			"geometry": {
 			"type": "Polygon",
-                "coordinates": [
-                    [
+				"coordinates": [
+					[
 						[-42.960377,58.492455],
 						[-50.038298,58.498691],
 						[-55.729573,63.016484],
@@ -167,18 +175,18 @@
 						[-30.036763,60.986348],
 						[-39.007833,63.477313],
 						[-42.960377,58.492455]
-                    ]
-                ]
+					]
+				]
 			}
-      },
+		},
 		{
 		"type": "Feature",
 		"bbox": [-56.2835670007614, 44.99190178072561, -30.00132533880236, 55.0119745231045],
 		"properties": {
-			"version":"1.01",
-			"modifiedDate":"2016-02-26T16:34:41.000Z",
-			"effectiveDate":"2016-03-06T16:34:41.000Z",
-			"endDate":"null",
+			"featureVersion":1,
+			"featureModifiedDate":"2016-02-26T16:34:41.000Z",
+			"featureEffectiveDate":"2016-03-06T16:34:41.000Z",
+			"featureEndDate":"2099-12-31T23:59:59.999Z",
 			"customerID":"NAVCanada",
 			"volumeName":"GanderCentralFIRbillingsouth",
 			"icaoID": "CZQX",
@@ -187,12 +195,16 @@
 			"sid":"0x01",
 			"featureID":"0x03",
 			"featureType":"billing",
-			"billingTypeProperties": {
+			"featureState":"active",
+			"billingFeatureProperties": {
+				"billable":"true",
+				"billingType":"time",
 				"creditable":"false",
 				"billingPriority":10,
-				"billingUnit":"time",
+				"billingUnit":"hour",
+				"billingRate":"B",
 				"billingEffectiveDate":"2017-11-06T16:34:41.000Z",
-				"billingEndDate":"null"
+				"billingEndDate":"2099-12-31T23:59:59.999Z"
 			},
 			"geometryType":"polygon",
 			"centerPoint":"[-57.877, 51.333]",
@@ -207,28 +219,27 @@
 			},
 			"geometry": {
 			"type": "Polygon",
-                "coordinates": [
-                    [
-                        [-30.00132533880236,45.02038897110011],
+				"coordinates": [
+					[
+						[-30.00132533880236,45.02038897110011],
 						[-30.02914078687711,55.0119745231045],
 						[-56.2835670007614,54.98127370267444],
 						[-53.951634603427,52.99783241920271],
 						[-51.00030705035056,49.00449069504312],
 						[-50.97795104021411,44.99190178072561],
 						[-30.00132533880236,45.02038897110011]
-                    ]
-                ]
-
+					]
+				]
 			}
 		},
 		{
 		"type": "Feature",
 		"bbox": [-39.315291,58.342387,-32.684709,61.656728],
 		"properties": {
-			"version":"1.01",
-			"modifiedDate":"2016-03-11T16:34:41.000Z",
-			"effectiveDate":"2016-03-11T16:34:41.000Z",
-			"endDate":"2017-11-06T16:34:41.000Z",
+			"featureVersion":1,
+			"featureModifiedDate":"2016-03-11T16:34:41.000Z",
+			"featureEffectiveDate":"2016-03-11T16:34:41.000Z",
+			"featureEndDate":"2099-12-31T23:59:59.999Z",
 			"customerID":"NAVCanada",
 			"volumeName":"GanderCircle",
 			"icaoID": "CZQX",
@@ -237,12 +248,16 @@
 			"sid":"0x01",
 			"featureID":"0x02",
 			"featureType":"billing",
-			"billingTypeProperties": {
+			"featureState":"active",
+			"billingFeatureProperties": {
+				"billable":"true",
+				"billingType":"time",
 				"creditable":"false",
 				"billingPriority":20,
-				"billingUnit":"time",
+				"billingUnit":"hour",
+				"billingRate":"C",
 				"billingEffectiveDate":"2016-03-11T16:34:41.000Z",
-				"billingEndDate":"null"
+				"billingEndDate":"2099-12-31T23:59:59.999Z"
 			},
 			"geometryType":"circle",
 			"centerPoint":"[-36, 60]",
@@ -257,8 +272,8 @@
 			},
 			"geometry": {
 			"type": "Polygon",
-                "coordinates": [
-                    [
+				"coordinates": [
+					[
 						[-32.684709,59.958356],
 						[-32.697014,60.206620],
 						[-32.784237,60.451155],
@@ -302,15 +317,9 @@
 						[-32.877765,59.472732],
 						[-32.745934,59.711927],
 						[-32.684709,59.958356]
-                    ]
-                ]
-
+					]
+				]
 			}
-      }
-	  ]
+		}
+	]
 }			
-
-
-
-
-	
