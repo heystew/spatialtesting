@@ -4,12 +4,7 @@
 	"fileFormatVersion" : 1,
 	"fileName" : "1newvolume.geojson",
 	"fileGeneratedBy" : "manual",
-	"fileModifiedDate" : "2017-04-25T12:00:00.000Z",
-	"crs" : {
-		"type" : "name",
-		"properties" : {
-			"name" : "urn:ogc:def:crs:OGC:1.3.:CRS84"
-		}
+	"fileModifiedDate" : "2017-04-25T12:00:00.000Z"
 	},
 	"customerCollection" : [{
 			"type" : "customer",
