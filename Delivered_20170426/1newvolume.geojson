@@ -1,0 +1,140 @@
+{
+	"fileVersion" : 1,
+	"checksum" : "4f26246e23fcef37569683a228d9e535",
+	"fileFormatVersion" : 1,
+	"fileName" : "1newvolume.geojson",
+	"fileGeneratedBy" : "manual",
+	"fileModifiedDate" : "2017-04-25T12:00:00.000Z",
+	"crs" : {
+		"type" : "name",
+		"properties" : {
+			"name" : "urn:ogc:def:crs:OGC:1.3.:CRS84"
+		}
+	},
+	"customerCollection" : [{
+			"type" : "customer",
+			"properties" : {
+				"customerID" : "CUS-111111",
+				"customerName" : "NewCustomer1",
+				"customerRecordVersion" : 1,
+				"anspTargetReportBundleTimeMsecs" : 50,
+				"barometricAltitudeRounding" : true,
+				"statusReportFormat" : "CAT025",
+				"rateTLE" : 1800,
+				"rateEquipmentStatusSecs" : 5,
+				"rateServiceVolumeStatusSecs" : 5,
+				"rateServiceVolumeStatisticsSecs" : 5,
+				"servicePredictionReportLookAheadHours" : 24,
+				"rateServicePredictionReportMins" : 1,
+				"rateServicePredictionDefinitionMins" : 12,
+				"rateVersionNumberReportMins" : 60,
+				"gstrProvided" : false,
+				"anspID" : "0x0302",
+				"DDID" : "0x0302",
+				"servicePredictionReportTimeIncrement" : 1
+			}
+		} 
+	],
+	"type" : "FeatureCollection",
+	"totalFeatures" : 2,
+	"features" : [{
+			"type" : "Feature",
+			"bbox" : [-89.000000, 65.000000, -36.000000, 80.000000],
+			"id" : "12-12-01-00",
+			"properties" : {
+				"featureVersion" : 1,
+				"featureModifiedDate" : "2017-04-30T12:00:00.000Z",
+				"featureEffectiveDate" : "2017-04-30T12:00:00.000Z",
+				"featureEndDate" : "2099-12-31T23:59:59.999Z",
+				"customerID" : "CUS-111111",
+				"volumeName" : "BigSquareServiceVolume",
+				"icaoID" : "BSSV",
+				"sac" : "0x12",
+				"sic" : "0x12",
+				"sid" : "0x01",
+				"featureID" : "0x00",
+				"featureType" : "service",
+				"serviceFeatureProperties" : {
+					"serviceType" : "primary",
+					"serviceDefaultMode" : "active",
+					"contractUpdateIntervalMsecs" : 15000,
+					"contractLatencyMsecs" : 2000,
+					"anspTargetReportUpdateMode" : "update",
+					"anspTargetReportMinWaitTimeMsecs" : 700,
+					"anspTargetReportPeriodicRateMsecs" : 0,
+					"offlineStatusThresholdPercent" : 90,
+					"degradedStatusThresholdPercent" : 50,
+					"networkServicesAddress" : "233.18.18.1",
+					"portTargetReportsCAT021" : 59980,
+					"portVersionNumberCAT247" : 59991,
+					"portAPDKeepAlive" : 65535,
+					"portServiceDefinitionReportCAT238" : 59988,
+					"portServicePredictionReportCAT238" : 59990,
+					"portServiceSystemStatusReportCAT025" : 59992,
+					"portServiceStatisticsReportCAT025" : 59993,
+					"portConstellationTLEReportCAT253" : 59994,
+					"anspTestTargetReportEnabled" : false,
+					"latencyTPM" : true,
+					"updateIntervalTPM" : true,
+					"probabilityUpdateTPM" : true,
+					"probabilityLongGapTPM" : true,
+					"velocityTrigger" : false
+				},
+				"geometryType" : "polygon",
+				"centerPoint" : [-62.50000, 72.500000],
+				"floorFeet" : 0,
+				"ceilingFeet" : 60000
+			},
+			"geometry" : {
+				"type" : "Polygon",
+				"coordinates" : [
+					[
+					[-89.000000, 65.000000],
+					[-36.000000, 65.000000],
+					[-36.000000, 80.000000],
+					[-89.000000, 80.000000],
+					[-89.000000, 65.000000]
+					]
+				]
+			}
+		}, {
+			"type" : "Feature",
+			"bbox" : [-88.000000, 66.000000, -37.000000, 79.000000],
+			"id" : "12-12-01-01",
+			"properties" : {
+				"featureVersion" : 1,
+				"featureModifiedDate" : "2017-04-30T12:00:00.000Z",
+				"featureEffectiveDate" : "2017-04-30T12:00:00.000Z",
+				"featureEndDate" : "2099-12-31T23:59:59.999Z",
+				"customerID" : "CUS-111111",
+				"volumeName" : "BSSV Volume 1",
+				"icaoID" : "BSSV",
+				"sac" : "0x12",
+				"sic" : "0x12",
+				"sid" : "0x01",
+				"featureID" : "0x01",
+				"featureType" : "billing",
+				"billingFeatureProperties" : {
+					"billingType" : "usage",
+					"billingPriority" : 1,
+					"billingEffectiveDate" : "2017-05-01T12:00:00.000Z",
+					"failedStateThresholdSecs" : 60
+				},
+				"geometryType" : "polygon",
+				"centerPoint" : [-62.50000, 72.500000],
+				"floorFeet" : 18000,
+				"ceilingFeet" : 60000
+			},
+			"geometry" : {
+				"type" : "Polygon",
+				"coordinates" : [[
+					[-88.000000, 66.000000],
+					[-37.000000, 66.000000],
+					[-37.000000, 79.000000],
+					[-88.000000, 79.000000],
+					[-88.000000, 66.000000]
+				]]
+			}
+		}
+	]
+}
